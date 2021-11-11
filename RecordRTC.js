@@ -1730,11 +1730,11 @@ if (typeof AudioContext === 'undefined') {
 }
 
 /*jshint -W079 */
-// var URL = (url, base) => {
-//     this.url = url;
-//     this.base = base;
-//     return window.URL;
-// }
+var URL = (url, base) => {
+    this.url = url;
+    this.base = base;
+    return window.URL;
+}
 
 if (typeof URL === 'undefined' && typeof webkitURL !== 'undefined') {
     /*global URL:true */
